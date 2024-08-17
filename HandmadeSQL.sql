@@ -24,6 +24,7 @@ CREATE TABLE `products` (
 	`productid` VARCHAR ( 30 ) NOT NULL PRIMARY KEY,
 	`image` VARCHAR ( 255 ) NOT NULL,
 	`productname` VARCHAR ( 255 ) NOT NULL,
+	`amount` INT DEFAULT 1,
 	`original_price` DECIMAL ( 10, 3 ) NOT NULL,
 	`discount_percentage` INT NOT NULL,
 	`discounted_price` DECIMAL ( 10, 3 ) NOT NULL,
